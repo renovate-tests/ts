@@ -16,7 +16,6 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'test/js/require.config.js',
-      {pattern: 'src/js/bower_components/power-assert/build/power-assert.js', included: false},
       {pattern: 'src/**/*.js', included: false},
       {pattern: 'test/**/*Spec.js', included: false}
     ],
