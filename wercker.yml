@@ -1,9 +1,11 @@
 box: wercker/nodejs
 build:
   steps:
-    - npm-install:
-      strict-ssl: false
-    - jshint:
-      use_strict: true
-      trailing_whitespace: false
-    - npm-test
+    - npm-install
+    - script:
+      name: install bower
+      code: sudo npm install -g bower
+
+    - script:
+      name: run bower install
+      code: bower install
