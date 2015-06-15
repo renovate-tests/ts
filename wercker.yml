@@ -11,4 +11,4 @@ build:
       name: run bower install
       code: bower install
 
-    - npm test
+    - npm-test
