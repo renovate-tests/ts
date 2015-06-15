@@ -1,0 +1,5 @@
+box: wercker/nodejs@0.0.10
+build:
+  steps:
+    - npm-install
+    - npm-test
