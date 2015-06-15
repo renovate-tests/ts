@@ -1,4 +1,4 @@
-box: wercker/nodejs
+box: wercker/ubuntu12.04-nodejs0.10
 build:
   steps:
     - npm-install
@@ -6,7 +6,9 @@ build:
     - script:
       name: install bower
       code: sudo npm install -g bower
-    #
-    # - script:
-    #   name: run bower install
-    #   code: bower install
+
+    - script:
+      name: run bower install
+      code: bower install
+
+    - npm test
