@@ -1,6 +1,6 @@
 # try karma and mocha test
 
-[![Dependency Status](https://gemnasium.com/9renpoto/delic.svg)](https://gemnasium.com/9renpoto/delic)
+[![wercker status](https://app.wercker.com/status/5eee1496d92ac3948f654cb2371a76d6/s "wercker status")](https://app.wercker.com/project/bykey/5eee1496d92ac3948f654cb2371a76d6)
 
 ### refs
 
