@@ -1,10 +1,10 @@
 {
   "name": "karma-mocha-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "try karma and mocha test",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/karma/bin/karma start"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +15,7 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-requirejs": "^0.2.2",
     "mocha": "^2.2.1",
-    "requirejs": "^2.1.16"
+    "requirejs": "^2.1.18"
   },
   "dependencies": {}
 }

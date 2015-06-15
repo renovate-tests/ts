@@ -1,9 +1,12 @@
-// test/appSpec.js
-define(['power-assert', 'app'], function(assert, app){
+define(function(require){
+  var
+    _ = require('underscore'),
+    assert = require('bower_components/power-assert/build/power-assert'),
+    app = require('src/js/app');
+
 
   describe('appモジュールのテスト', function(){
     it('maxメソッドのテスト', function(){
-      // expect(app.max(1,2,3)).to.be(3);
       assert(app.max(1,2,3) === 3);
     });
   });

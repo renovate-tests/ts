@@ -9,15 +9,11 @@ for (var file in window.__karma__.files) {
 }
 
 require.config({
-  baseUrl: "base/src/js",
+  baseUrl: "base",
   paths: {
     "underscore": "bower_components/underscore/underscore",
-    "power-assert": "bower_components/power-assert/build/power-assert"
   },
   shim: {
-    "underscore": {
-      exports: "_"
-    }
   },
   deps: tests,
   callback: window.__karma__.start
