@@ -1,6 +1,6 @@
 # try karma and mocha test
 
-[![wercker status](https://app.wercker.com/status/5eee1496d92ac3948f654cb2371a76d6/s "wercker status")](https://app.wercker.com/project/bykey/5eee1496d92ac3948f654cb2371a76d6)
+[![wercker status](https://app.wercker.com/status/5eee1496d92ac3948f654cb2371a76d6/s/master "wercker status")](https://app.wercker.com/project/bykey/5eee1496d92ac3948f654cb2371a76d6)
 
 ### refs
 
