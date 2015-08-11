@@ -22,11 +22,6 @@ module.exports = function(config) {
     browsers: ['PhantomJS'],
     singleRun: true,
     webpack: {
-      module: {
-        loaders: [
-          { test: /_test\.js$/, exclude: /node_modules/, loader: 'webpack-espower-loader' }
-        ]
-      },
       resolve: {
         root: path.join(__dirname, 'src'),
         modulesDirectories: [
