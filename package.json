@@ -1,13 +1,14 @@
 {
   "name": "karma-mocha-test",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "try karma and mocha test",
   "main": "",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Keisuke Kan",
+  "license": "MIT",
+  "private": true,
   "devDependencies": {
     "karma": "^0.13.10",
     "karma-mocha": "^0.2.0",
@@ -15,10 +16,10 @@
     "karma-webpack": "^1.7.0",
     "mocha": "^2.3.3",
     "webpack": "^1.12.2",
-    "webpack-espower-loader": "^1.0.1"
+    "webpack-espower-loader": "^1.0.1",
+    "sinon": "^1.17.1"
   },
   "dependencies": {
-    "bower": "^1.5.3",
-    "sinon": "^1.17.1"
+    "bower": "^1.5.3"
   }
 }
