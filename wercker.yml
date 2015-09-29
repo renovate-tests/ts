@@ -9,3 +9,7 @@ build:
         name: run bower install
         code: bower install
     - npm-test
+
+  after-steps:
+    - wantedly/pretty-slack-notify:
+        webhook_url: $SLACK_WEBHOOK_URL
