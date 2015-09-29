@@ -9,16 +9,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "karma": "^0.13.9",
+    "karma": "^0.13.10",
     "karma-mocha": "^0.2.0",
     "karma-phantomjs-launcher": "^0.2.1",
     "karma-webpack": "^1.7.0",
-    "mocha": "^2.3.0",
-    "webpack": "^1.12.0",
-    "webpack-espower-loader": "^1.0.0"
+    "mocha": "^2.3.3",
+    "webpack": "^1.12.2",
+    "webpack-espower-loader": "^1.0.1"
   },
   "dependencies": {
-    "bower": "^1.5.2",
-    "sinon": "^1.16.1"
+    "bower": "^1.5.3",
+    "sinon": "^1.17.1"
   }
 }
