@@ -11,13 +11,15 @@
   "private": true,
   "devDependencies": {
     "karma": "^0.13.10",
+    "karma-coverage": "^0.5.2",
     "karma-mocha": "^0.2.0",
     "karma-phantomjs-launcher": "^0.2.1",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.3.3",
+    "power-assert": "^1.0.1",
+    "sinon": "^1.17.1",
     "webpack": "^1.12.2",
-    "webpack-espower-loader": "^1.0.1",
-    "sinon": "^1.17.1"
+    "webpack-espower-loader": "^1.0.1"
   },
   "dependencies": {
     "bower": "^1.5.3"
