@@ -11,10 +11,6 @@
     "linebreak-style": [
       2,
       "unix"
-    ],
-    "semi": [
-      2,
-      "always"
     ]
   },
   "env": {
@@ -23,10 +19,10 @@
     "browser": true
   },
   "ecmaFeatures": {
-    "modules": true,
     "arrowFunctions": true,
+    "blockBindings": true,
     "classes": true,
-    "blockBindings": true
+    "modules": true
   },
   "extends": "eslint:recommended"
 }

@@ -11,7 +11,7 @@ module.exports = function(config) {
       "test/*.js": ["babel"]
     },
     "reporters": ["dots"],
-    "browsers": ["Electron"],
+    "browsers": ["PhantomJS2"],
     "singleRun": true
   });
 };

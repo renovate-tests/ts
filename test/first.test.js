@@ -1,6 +1,6 @@
 import assert from "power-assert";
-describe("sample", function(){
-  it("sample", function(){
+describe("sample", () => {
+  it("sample", () => {
     assert.ok(true);
   });
 });
