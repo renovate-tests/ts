@@ -3,11 +3,8 @@ build:
   steps:
     - npm-install
     - script:
-        name: install bower
-        code: sudo npm install -g bower
-    - script:
-        name: run bower install
-        code: bower install
+        name: lint
+        code: eslint test/*.js
     - npm-test
 
   after-steps:
