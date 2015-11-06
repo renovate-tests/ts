@@ -1,0 +1,32 @@
+{
+  "rules": {
+    "indent": [
+      2,
+      2
+    ],
+    "quotes": [
+      2,
+      "double"
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "semi": [
+      2,
+      "always"
+    ]
+  },
+  "env": {
+    "es6": true,
+    "mocha" : true,
+    "browser": true
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "arrowFunctions": true,
+    "classes": true,
+    "blockBindings": true
+  },
+  "extends": "eslint:recommended"
+}

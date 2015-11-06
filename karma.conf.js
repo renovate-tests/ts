@@ -1,18 +1,17 @@
-var path = require("path");
-
+/* global module */
 module.exports = function(config) {
   config.set({
     "basePath": "",
-    "frameworks": ["mocha", "commonjs"],
+    "frameworks": ["mocha"],
     "files": [
       "test/*.js",
       "node_modules/power-assert/build/power-assert.js"
     ],
     "preprocessors": {
-      "test/*.js": ["commonjs"]
+      "test/*.js": ["babel"]
     },
-    "reporters": ["progress"],
-    "browsers": ["PhantomJS"],
+    "reporters": ["dots"],
+    "browsers": ["Electron"],
     "singleRun": true
   });
 };
