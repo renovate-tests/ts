@@ -4,8 +4,7 @@ module.exports = function (config) {
     'basePath': '',
     'frameworks': ['mocha'],
     'files': [
-      'test/*.js',
-      'node_modules/power-assert/build/power-assert.js'
+      'test/*.js'
     ],
     'preprocessors': {
       'test/*.js': ['babel']
