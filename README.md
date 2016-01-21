@@ -1,8 +1,5 @@
-# try karma and mocha test
+# javascript [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard) [![wercker status](https://app.wercker.com/status/711e8706f8150eea8498e5eff6a9fd17/s/master "wercker status")](https://app.wercker.com/project/bykey/711e8706f8150eea8498e5eff6a9fd17)
 
-[![wercker status](https://app.wercker.com/status/5eee1496d92ac3948f654cb2371a76d6/m/master "wercker status")](https://app.wercker.com/project/bykey/5eee1496d92ac3948f654cb2371a76d6)
+# LICENSE
 
-### refs
-
-- http://bati11blog.hatenablog.com/entry/2013/12/30/152835
-- https://github.com/hell0again/sample-test-karma-power-assert-requirejs
+MIT
