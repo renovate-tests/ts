@@ -1,4 +1,8 @@
-# javascript [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard) [![wercker status](https://app.wercker.com/status/711e8706f8150eea8498e5eff6a9fd17/s/master "wercker status")](https://app.wercker.com/project/bykey/711e8706f8150eea8498e5eff6a9fd17)
+# javascript
+
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard) [![wercker status](https://app.wercker.com/status/711e8706f8150eea8498e5eff6a9fd17/s/master "wercker status")](https://app.wercker.com/project/bykey/711e8706f8150eea8498e5eff6a9fd17)
+[![](https://magnum-ci.com/status/9ad1fc5e2d83700e9a43eafa8b880d7e.png)](https://magnum-ci.com/projects/3877)
+[![Build Status](https://drone.io/github.com/9renpoto/javascript/status.png)](https://drone.io/github.com/9renpoto/javascript/latest)
 
 # LICENSE
 
