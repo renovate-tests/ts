@@ -8,7 +8,6 @@ build:
         name: lint
         code: $(npm bin)/eslint test/*.js
     - npm-test
-
   after-steps:
     - slack-notifier:
       url: $SLACK_URL
