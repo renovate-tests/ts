@@ -8,6 +8,3 @@ build:
         name: lint
         code: $(npm bin)/eslint test/*.js
     - npm-test
-  after-steps:
-    - wantedly/pretty-slack-notify:
-      webhook_url: $SLACK_WEBHOOK_URL
