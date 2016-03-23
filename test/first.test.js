@@ -1,7 +1,7 @@
-import assert from 'power-assert'
+import assert from 'power-assert';
 
 describe('sample', () => {
   it('sample', () => {
-    assert.ok(true)
-  })
-})
+    assert(true);
+  });
+});

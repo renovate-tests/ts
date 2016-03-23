@@ -1,16 +1,16 @@
 /* global module */
-module.exports = function (config) {
+module.exports = function settings(config) {
   config.set({
-    'basePath': '',
-    'frameworks': ['mocha'],
-    'files': [
-      'test/*.js'
+    basePath: '',
+    frameworks: ['mocha'],
+    files: [
+      'test/*.js',
     ],
-    'preprocessors': {
-      'test/*.js': ['babel']
+    preprocessors: {
+      'test/*.js': ['babel'],
     },
-    'reporters': ['dots'],
-    'browsers': ['jsdom'],
-    'singleRun': true
-  })
-}
+    reporters: ['dots'],
+    browsers: ['jsdom'],
+    singleRun: true,
+  });
+};
