@@ -2,7 +2,7 @@
   "name": "javascript",
   "version": "0.0.1",
   "description": "my javascript env",
-  "script": {
+  "scripts": {
     "lint": "eslint src test",
     "test": "mocha --compilers js:babel-core/register && npm run lint"
   },
