@@ -1,9 +1,9 @@
 module.exports = {
-  'extends': 'standard',
-  'plugins': [
-    'standard'
+  "extends": "airbnb",
+  "plugins": [
+    "react"
   ],
   'env': {
     'mocha': true
   }
-}
+};
