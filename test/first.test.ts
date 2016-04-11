@@ -4,6 +4,6 @@ import * as assert from 'power-assert'
 
 describe('sample', () => {
   it('sample', () => {
-    assert(false)
+    assert(true)
   })
 })
