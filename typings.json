@@ -1,0 +1,9 @@
+{
+  "name": "javascript",
+  "version": false,
+  "dependencies": {},
+  "ambientDevDependencies": {
+    "mocha": "registry:dt/mocha#2.2.5+20160317120654",
+    "power-assert": "registry:dt/power-assert#0.0.0+20160316155526"
+  }
+}
