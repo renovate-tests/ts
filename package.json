@@ -1,24 +1,13 @@
 {
-  "name": "javascript",
-  "version": "0.0.1",
-  "description": "my javascript env",
+  "name": "JavaScript",
   "scripts": {
+    "lint": "eslint src test",
+    "postinstall": "typings i",
     "test": "mocha --compilers ts:espower-typescript/guess"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com/9renpoto/javascript.git"
   },
   "private": true,
   "license": "MIT",
   "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-cli": "^6.9.0",
-    "babel-core": "^6.9.0",
-    "babel-preset-es2015": "^6.9.0",
     "eslint": "^2.10.2",
     "espower-typescript": "^5.0.1",
     "mocha": "^2.5.3",
