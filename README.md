@@ -1,5 +1,7 @@
 # JavaScript
-[![Travis Build Status][travis-image]][travis-url] [![CircleCI Build Status][circleci-image]][circleci-url]
+
+[![codecov][codedov-image]][codecov-url] [![Travis Build Status][travis-image]][travis-url] [![CircleCI Build Status][circleci-image]][circleci-url]
+
 
 # LICENSE
 
@@ -9,3 +11,5 @@ MIT
 [travis-url]: https://travis-ci.org/9renpoto/javascript
 [circleci-image]: https://circleci.com/gh/9renpoto/javascript/tree/master.svg?style=svg&circle-token=5f62287b01e81aff034008cdfbf2a6c09f42a13b
 [circleci-url]: https://circleci.com/gh/9renpoto/javascript/tree/master
+[codedov-image]: https://codecov.io/gh/9renpoto/javascript/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/9renpoto/javascript
