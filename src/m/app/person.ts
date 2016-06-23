@@ -1,10 +1,14 @@
+interface Person {
+  name: string
+  getName(): string
+}
+
 class Person {
-  private name: string;
-  initialize (name: string) {
+  constructor (name: string) {
     this.name = name
   }
   public getName (): string {
-    return name
+    return this.name
   }
 }
 

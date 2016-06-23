@@ -6,6 +6,9 @@
     "pretest": "npm run clean && npm run lint",
     "test": "mocha"
   },
+  "directories": {
+    "test": "test/"
+  },
   "private": true,
   "license": "MIT",
   "devDependencies": {

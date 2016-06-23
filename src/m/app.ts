@@ -1,7 +1,6 @@
-import * as Person from './app/person'
+import Person from './app/person'
 
-let bob: Person = new Person('Bob')
+const bob = new Person('name')
 export default {
-  Person: Person,
   Bob: bob
 }
