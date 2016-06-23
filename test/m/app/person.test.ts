@@ -1,7 +1,6 @@
-/// <reference path="../typings/index.d.ts" />
+/// <reference path="../../../typings/index.d.ts" />
 
 import * as assert from 'power-assert'
-
 import * as Person from '../../../src/m/app/person'
 
 describe('person', () => {
