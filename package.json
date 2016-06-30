@@ -2,6 +2,8 @@
   "name": "JavaScript",
   "scripts": {
     "clean": "find src test -name '*.js' -delete",
+    "lint:ts": "tslint src/**/**/*.ts test/**/**/*.ts",
+    "lint": "npm run lint:ts",
     "postinstall": "typings i",
     "pretest": "npm run clean && npm run lint",
     "test": "mocha"
@@ -12,10 +14,11 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
+    "@uncovertruth/tslint-config": "0.0.1",
     "espower-typescript": "^5.0.1",
     "mocha": "^2.5.3",
     "power-assert": "^1.4.1",
-    "tslint": "^3.11.0",
-    "typings": "^1.3.0"
+    "tslint": "^3.12.1",
+    "typings": "^1.3.1"
   }
 }
