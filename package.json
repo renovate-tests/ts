@@ -8,12 +8,10 @@
   "private": true,
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^2.10.2",
     "espower-typescript": "^5.0.1",
     "mocha": "^2.5.3",
     "power-assert": "^1.4.1",
     "tslint": "^3.10.2",
-    "typescript-eslint-parser": "0.1.0-alpha-1",
     "typings": "^1.0.4"
   }
 }
