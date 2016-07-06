@@ -1,7 +1,6 @@
 {
   "name": "JavaScript",
   "scripts": {
-    "lint": "eslint src test",
     "postinstall": "typings i",
     "test": "mocha --compilers ts:espower-typescript/guess"
   },
@@ -11,7 +10,6 @@
     "espower-typescript": "^5.0.1",
     "mocha": "^2.5.3",
     "power-assert": "^1.4.1",
-    "tslint": "^3.10.2",
     "typings": "^1.0.4"
   }
 }
