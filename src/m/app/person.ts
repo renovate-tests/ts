@@ -3,7 +3,7 @@ interface Person {
   getName(): string
 }
 
-class Person {
+export class Person {
   constructor (name: string) {
     this.name = name
   }
@@ -11,5 +11,3 @@ class Person {
     return this.name
   }
 }
-
-export default Person
