@@ -1,15 +1,36 @@
 {
-  "name": "JavaScript",
+  "name": "@9renpoto/ts",
   "scripts": {
+    "lint:ts": "tslint $(find src test -name '*.ts')",
+    "lint": "npm-run-all -p -l lint:*",
     "postinstall": "typings i",
-    "test": "mocha --compilers ts:espower-typescript/guess"
+    "test:lint": "npm run lint",
+    "test:mocha": "mocha",
+    "test": "npm-run-all -p test:*"
+  },
+  "directories": {
+    "test": "test"
   },
   "private": true,
   "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
+    "@uncovertruth/tslint-config": "0.0.1",
     "espower-typescript": "^5.0.1",
     "mocha": "^2.5.3",
+    "npm-run-all": "^2.3.0",
     "power-assert": "^1.4.1",
-    "typings": "^1.0.4"
-  }
+    "ts-node": "^0.9.3",
+    "tslint": "^3.12.1",
+    "typings": "^1.3.1"
+  },
+  "description": "study frontend",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/9renpoto/javascript.git"
+  },
+  "keywords": [],
+  "author": "9renpoto"
 }

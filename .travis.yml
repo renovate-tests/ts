@@ -1,5 +1,12 @@
 language: node_js
 sudo: false
 node_js: stable
+cache:
+  directories:
+    - node_modules
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 notifications:
-    email: false
+  email: false
+  slack:
+    secure: Qf4CCsJdSAIDyK6f0Ra9Av3LximTzj9neICo7+JlCfJ4J/k5vMFjugmk0ryexTq5LQJeGdPbre727V54nPEOTNMDGKtymlowaydFWXfw3nCKxjF6DZUzoLpEitU7EMjpRFgdB/ZNaQl4fY7Onin6z3cQp+rllwYTadRB+TWXuVibFicv7skNExWBDYZYTIM9C0/gNRXnNHvKN1GrfXGHMokLY2nu3rBUPRfUdCp68gOf+UCbl7ze+GyTTEsj3VkanH9EFfJ0ah78YRK6RuTRtddW4AsXS5WMfuQm1kwYRRI0UZ5wTR+S0n193sYtjSj9mN5n9zK3vUL/3FRbYfXzg7Df2AJgJsKsdrxS6hk8UNPUaCG5dnGAv4Rz6NTWh8KxAPhL0GLgD0v55021VH01hSj/POs6B24Cbb+4vz7GO3Zbq8yGyKhq/m5bRYz4sIxSQ3fDeu9vDMtNBX2weWYgN+snkjwBIWPt4Ks5gIZ/HcuKYnhOPBccUbQMyRaitCEHIHRaBBOe7O2MaIRLnoRxEgeWLofYbyqyMGMXzOTFAT6ekDqrGLr5jPDHtM9wmLh74GRUavfX3NkalmmQFgwoLOWBeBc0F64xyALf8W4f4qaj9MWN0DZp0obBrJMgQvq+kIvl+Z4XaAXjUpQt2Nf835uaHKeMBjLlF1kBmXmyU8Q=
