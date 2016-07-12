@@ -1,4 +1,4 @@
-# @9renpoto/javascript
+# @9renpoto/ts
 
 study frontend
 
