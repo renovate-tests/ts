@@ -22,7 +22,7 @@
     "power-assert": "^1.4.1",
     "ts-node": "^1.2.1",
     "tslint": "^3.12.1",
-    "typings": "^1.3.1"
+    "typings": "^1.3.2"
   },
   "description": "study frontend",
   "version": "0.0.1",
