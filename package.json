@@ -17,7 +17,7 @@
   "devDependencies": {
     "@9renpoto/tslint-config": "^1.0.0",
     "espower-typescript": "^5.0.1",
-    "mocha": "^2.5.3",
+    "mocha": "^3.0.0",
     "npm-run-all": "^2.3.0",
     "power-assert": "^1.4.1",
     "ts-node": "^1.2.1",
