@@ -1,11 +1,20 @@
 {
   "name": "@9renpoto/ts",
+  "description": "study frontend",
+  "version": "0.0.1",
+  "author": "9renpoto",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/9renpoto/javascript.git"
+  },
   "scripts": {
-    "lint:ts": "tslint $(find src test -name '*.ts')",
+    "lint:ts": "tslint \"src/*.ts\" \"test/*.ts\"",
     "lint": "npm-run-all -p -l lint:*",
-    "postinstall": "typings i",
+    "codecov": "nyc report --reporter=json && codecov -f coverage/*.json",
+    "pretest:mocha": "find src test -name '*.js' -delete && tsc test/*.ts",
     "test:lint": "npm run lint",
-    "test:mocha": "mocha",
+    "test:mocha": "nyc mocha",
     "test": "npm-run-all -p test:*"
   },
   "directories": {
@@ -16,21 +25,20 @@
   "dependencies": {},
   "devDependencies": {
     "@9renpoto/tslint-config": "^1.0.0",
+    "@types/mocha": "^2.2.29",
+    "@types/power-assert": "0.0.27",
+    "codecov": "^1.0.1",
     "espower-typescript": "^5.0.1",
     "mocha": "^3.0.0",
     "npm-run-all": "^2.3.0",
+    "nyc": "^8.1.0",
     "power-assert": "^1.4.1",
-    "ts-node": "^1.2.1",
     "tslint": "^3.14.0",
-    "typings": "^1.3.2"
+    "typescript": "^2.0.0"
   },
-  "description": "study frontend",
-  "version": "0.0.1",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/javascript.git"
-  },
-  "keywords": [],
-  "author": "9renpoto"
+  "keywords": [
+    "codecov",
+    "example",
+    "typescript"
+  ]
 }

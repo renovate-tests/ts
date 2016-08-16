@@ -1,0 +1,11 @@
+codecov:
+  token: eb55001c-68b4-41af-9d83-ffcf46204726
+
+coverage:
+  precision: 2
+  round: down
+  range: "90...100"
+
+comment:
+  layout: "header, diff, changes, sunburst, uncovered, tree"
+  behavior: default
