@@ -9,12 +9,17 @@
     "url": "git+ssh://git@github.com/9renpoto/javascript.git"
   },
   "scripts": {
+    "clean": "rimraf dist && rimraf coverage",
+    "cover:html": "cd coverage && remap-istanbul -i coverage.json -o html-report -t html",
+    "cover": "npm-run-all -p cover:*",
+    "cover:json": "cd coverage && cat coverage.json | remap-istanbul -o coverage-remapped.json",
+    "codecov": "npm run cover && codecov -f coverage/coverage-remapped.json",
     "lint:ts": "tslint \"src/*.ts\" \"test/*.ts\"",
     "lint": "npm-run-all -p -l lint:*",
-    "codecov": "nyc report --reporter=json && codecov -f coverage/*.json",
-    "pretest:mocha": "find src test -name '*.js' -delete && tsc test/*.ts",
+    "pretest:mocha": "npm run clean && tsc",
+    "posttest": "npm run cover",
     "test:lint": "npm run lint",
-    "test:mocha": "nyc mocha",
+    "test:mocha": "istanbul cover _mocha -- dist/test/*.test.js",
     "test": "npm-run-all -p test:*"
   },
   "directories": {
@@ -28,11 +33,12 @@
     "@types/mocha": "^2.2.29",
     "@types/power-assert": "0.0.27",
     "codecov": "^1.0.1",
-    "espower-typescript": "^5.0.1",
+    "istanbul": "^0.4.4",
     "mocha": "^3.0.0",
     "npm-run-all": "^2.3.0",
-    "nyc": "^8.1.0",
     "power-assert": "^1.4.1",
+    "remap-istanbul": "^0.6.4",
+    "rimraf": "^2.5.4",
     "tslint": "^3.14.0",
     "typescript": "^2.0.0"
   },
