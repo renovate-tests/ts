@@ -3,30 +3,6 @@
   "description": "study frontend",
   "version": "0.0.1",
   "author": "9renpoto",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/9renpoto/javascript.git"
-  },
-  "scripts": {
-    "clean": "rimraf dist && rimraf coverage",
-    "cover:html": "cd coverage && remap-istanbul -i coverage.json -o html-report -t html",
-    "cover": "npm-run-all -p cover:*",
-    "cover:json": "cd coverage && cat coverage.json | remap-istanbul -o coverage-remapped.json",
-    "codecov": "npm run cover && codecov -f coverage/coverage-remapped.json",
-    "lint:ts": "tslint \"src/*.ts\" \"test/*.ts\"",
-    "lint": "npm-run-all -p -l lint:*",
-    "pretest:mocha": "npm run clean && tsc",
-    "posttest": "npm run cover",
-    "test:lint": "npm run lint",
-    "test:mocha": "istanbul cover _mocha -- dist/test/*.test.js",
-    "test": "npm-run-all -p test:*"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "private": true,
-  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@9renpoto/tslint-config": "^1.0.0",
@@ -42,9 +18,33 @@
     "tslint": "^3.14.0",
     "typescript": "^2.0.0"
   },
+  "directories": {
+    "test": "test"
+  },
   "keywords": [
     "codecov",
     "example",
     "typescript"
-  ]
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/9renpoto/javascript.git"
+  },
+  "scripts": {
+    "clean": "rimraf dist && rimraf coverage",
+    "codecov": "npm run cover && codecov -f coverage/coverage-remapped.json",
+    "cover": "npm-run-all -p cover:*",
+    "cover:html": "cd coverage && remap-istanbul -i coverage.json -o html-report -t html",
+    "cover:json": "cd coverage && cat coverage.json | remap-istanbul -o coverage-remapped.json",
+    "lint": "npm-run-all -p -l lint:*",
+    "lint:ts": "tslint \"src/*.ts\" \"test/*.ts\"",
+    "posttest": "npm run cover",
+    "pretest:mocha": "npm run clean && tsc",
+    "test": "npm-run-all -p test:*",
+    "test:lint": "npm run lint",
+    "test:mocha": "istanbul cover _mocha -- dist/test/*.test.js"
+  }
 }
