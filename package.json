@@ -11,12 +11,15 @@
     "@types/power-assert": "^1.4.29",
     "codecov": "^1.0.1",
     "eslint": "^3.9.0",
+    "intelli-espower-loader": "^1.0.1",
     "istanbul": "^0.4.4",
     "mocha": "^3.0.0",
     "npm-run-all": "^3.1.1",
     "power-assert": "^1.4.1",
     "remap-istanbul": "^0.7.0",
     "rimraf": "^2.5.4",
+    "rollup": "^0.36.3",
+    "rollup-plugin-typescript": "^0.8.1",
     "tslint": "^3.15.1",
     "typescript": "^2.0.0",
     "typescript-eslint-parser": "^0.4.0"
@@ -37,6 +40,7 @@
     "url": "git+ssh://git@github.com/9renpoto/javascript.git"
   },
   "scripts": {
+    "build": "rollup -c",
     "clean": "rimraf dist coverage",
     "codecov": "npm run cover && codecov -f coverage/coverage-remapped.json",
     "cover": "npm-run-all -p cover:*",
@@ -48,6 +52,7 @@
     "posttest": "npm run cover",
     "pretest:mocha": "npm run clean && tsc",
     "test": "npm-run-all -p test:*",
+    "test:build": "npm run build",
     "test:lint": "npm run lint",
     "test:mocha": "istanbul cover _mocha -- dist/test/*.test.js"
   }
