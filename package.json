@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "@9renpoto/eslint-config": "^1.4.0",
-    "@9renpoto/tslint-config": "^1.1.0",
+    "@9renpoto/tslint-config": "^2.0.0",
     "@types/mocha": "^2.2.29",
     "@types/power-assert": "^1.4.29",
     "codecov": "^1.0.1",
