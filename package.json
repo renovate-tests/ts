@@ -5,7 +5,7 @@
   "author": "9renpoto",
   "dependencies": {},
   "devDependencies": {
-    "@9renpoto/eslint-config": "^1.5.1",
+    "@9renpoto/eslint-config": "^2.0.0",
     "@9renpoto/tslint-config": "^3.0.0",
     "@types/mocha": "^2.2.39",
     "@types/power-assert": "^1.4.29",
