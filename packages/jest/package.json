@@ -1,0 +1,36 @@
+{
+  "name": "@9renpoto/jest",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@types/jest": "^20.0.8",
+    "eslint-plugin-jest": "^20.0.3",
+    "jest": "^20.0.4",
+    "ts-jest": "^20.0.10"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "collectCoverage": true,
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  },
+  "license": "MIT",
+  "main": "n/a",
+  "private": true,
+  "scripts": {
+    "allow-failed:eslint": "eslint . --ext=ts,tsx",
+    "allow-failsures": "run-p allow-failed:*",
+    "build": "",
+    "clean": "rimraf dist coverage",
+    "coverage": "codecov -f ./coverage/lcov.info -F jest",
+    "lint": "run-p lint:*",
+    "lint:ts": "tslint \"src/*.ts\" \"test/*.ts\"",
+    "test": "jest"
+  }
+}

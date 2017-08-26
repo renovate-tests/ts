@@ -2,6 +2,15 @@
   "name": "@9renpoto/ts-mocha",
   "version": "0.0.1",
   "author": "@9renpoto",
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/power-assert": "^1.4.29",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "power-assert": "^1.4.4",
+    "source-map-support": "^0.4.16"
+  },
   "directories": {
     "test": "test"
   },
@@ -9,11 +18,12 @@
   "main": "n/a",
   "private": true,
   "scripts": {
+    "allow-failed:eslint": "eslint . --ext=ts,tsx",
+    "allow-failsures": "run-p allow-failed:*",
     "build": "",
     "clean": "rimraf dist coverage",
-    "coverage": "codecov -f ./coverage/lcov.info",
+    "coverage": "codecov -f ./coverage/lcov.info -F mocha",
     "lint": "run-p lint:*",
-    "lint:eslint": "eslint . --ext=ts,tsx",
     "lint:ts": "tslint \"src/*.ts\" \"test/*.ts\"",
     "test": "nyc mocha -- test/*.test.ts"
   }
