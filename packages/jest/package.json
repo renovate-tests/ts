@@ -1,11 +1,16 @@
 {
   "name": "@9renpoto/jest",
   "version": "0.0.1",
+  "dependencies": {
+    "inferno": "^3.9.0",
+    "inferno-component": "^3.9.0"
+  },
   "devDependencies": {
     "@types/jest": "^20.0.8",
-    "eslint-plugin-jest": "^20.0.3",
-    "jest": "^20.0.4",
-    "ts-jest": "^20.0.10"
+    "eslint-plugin-jest": "^21.1.0",
+    "inferno-test-utils": "^3.9.0",
+    "jest": "^21.1.0",
+    "ts-jest": "^21.0.1"
   },
   "jest": {
     "transform": {
